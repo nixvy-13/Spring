@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Sabiduría o Poder?</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>¿Qué prefieres, sabiduría o poder?</h1>
+    <form action="/sabPod" method="post">
+        <label for="sabPod">Elige una opción:</label><br>
+        <select id="sabPod" name="sabPod">
+            <option value="true">Poder</option>
+            <option value="false">Sabiduría</option>
+        </select><br>
+        <button type="submit">Siguiente</button>
+    </form>
+</body>
+</html>

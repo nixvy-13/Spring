@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Comida</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>¿Cual de estas comidas prefieres?</h1>
+    <form action="/comida" method="post">
+        <label>
+            <input type="radio" name="comidaSeleccionada" value="DEIDARA">
+            Sushi
+        </label><br>
+        <label>
+            <input type="radio" name="comidaSeleccionada" value="ITACHI">
+            Ramen
+        </label><br>
+        <label>
+            <input type="radio" name="comidaSeleccionada" value="OROCHIMARU">
+            Onigiris
+        </label><br>
+        <label>
+            <input type="radio" name="comidaSeleccionada" value="TOBI">
+            Pollo
+        </label><br>
+        <label>
+            <input type="radio" name="comidaSeleccionada" value="SASORI">
+            Curry
+        </label><br>
+
+        <button type="submit">Siguiente</button>
+    </form>
+</body>
+</html>

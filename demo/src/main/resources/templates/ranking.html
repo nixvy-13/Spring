@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultados</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+		<h1>Ranking</h1>
+		
+			<h2>Puntuaciones <span th:text="${nombre_ranking}"></span></h2>
+			        <div class="table-container">
+			            <table class="tabla-puntuaciones" border="1">
+			                <thead>
+			                    <tr>
+			                        <th>Jugador</th>
+			                        <th>Personaje</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr th:each="puntuacion : ${punt_ranking}">
+			                        <td th:text="${puntuacion.jugador.nombre}"></td>
+			                        <td th:text="${puntuacion.nombre_personaje}"></td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			        </div>
+					        <div class="restart-button">
+					            <a href="/" class="button">Volver a empezar</a>
+					        </div>
+	</div>
+</body>
+</html>

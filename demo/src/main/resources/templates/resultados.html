@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultados</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+		<h1>Resultados del Quiz</h1>
+
+			<div th:if="${personajeConMayorPuntuacion}">
+			    <h2>Resultados</h2>
+			    <p><strong>Personaje:</strong> <span th:text="${personajeConMayorPuntuacion.name()}">Personaje</span></p>
+			    <p><strong>Puntuación:</strong> <span th:text="${personajeConMayorPuntuacion.puntuacion}">0</span></p>
+			    
+			    <div class="image-container">
+			        <img th:src="@{'/imagenes/' + ${personajeConMayorPuntuacion.name().toLowerCase() + '.jpg'}}" alt="Imagen del personaje"/>
+			    </div>
+			</div>
+			
+			<h2>Puntuaciones de los jugadores</h2>
+			        <div class="table-container">
+			            <table class="tabla-puntuaciones" border="1">
+			                <thead>
+			                    <tr>
+			                        <th>Jugador</th>
+			                        <th>Personaje</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr th:each="puntuacion : ${puntuaciones}">
+			                        <td th:text="${puntuacion.jugador.nombre}"></td>
+			                        <td th:text="${puntuacion.nombre_personaje}"></td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			        </div>
+					        <div class="restart-button">
+					            <a href="/" class="button">Volver a empezar</a>
+					        </div>
+							<form action="/resultados" method="post">
+								<label>
+								     <input type="text" name="nombre_ranking"> De que jugador quieres ver el ranking?
+								 </label>
+								 <button type="submit">Siguiente</button>
+							</form>
+	</div>
+</body>
+</html>

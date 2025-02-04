@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Música</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>¿Cuáles de estos géneros musicales te gustan?</h1>
+    <form action="/musica" method="post">
+        <label>
+            <input type="checkbox" name="musicaSeleccionada" value="OROCHIMARU">
+            Música clásica
+        </label><br>
+        <label>
+            <input type="checkbox" name="musicaSeleccionada" value="TOBI">
+            Hyperpop
+        </label><br>
+        <label>
+            <input type="checkbox" name="musicaSeleccionada" value="ITACHI">
+            Metal
+        </label><br>
+        <label>
+            <input type="checkbox" name="musicaSeleccionada" value="SASORI">
+            Rap
+        </label><br>
+        <label>
+            <input type="checkbox" name="musicaSeleccionada" value="DEIDARA">
+            Punk
+        </label><br>
+
+        <button type="submit">Siguiente</button>
+
+    </form>
+</body>
+</html>

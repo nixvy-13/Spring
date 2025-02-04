@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Arma</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>¿Qué arma prefieres?</h1>
+    <form action="/arma" method="post">
+        <label>
+            <input type="radio" name="armaSeleccionada" value="DEIDARA">
+            Explosivos
+        </label><br>
+        <label>
+            <input type="radio" name="armaSeleccionada" value="ITACHI">
+            Katana
+        </label><br>
+        <label>
+            <input type="radio" name="armaSeleccionada" value="SASORI">
+            Veneno
+        </label><br>
+        <label>
+            <input type="radio" name="armaSeleccionada" value="OROCHIMARU">
+            Conocimiento
+        </label><br>
+        <label>
+            <input type="radio" name="armaSeleccionada" value="TOBI">
+            Ninguna
+        </label><br>
+        
+        <button type="submit">Siguiente</button>
+    </form>
+</body>
+</html>

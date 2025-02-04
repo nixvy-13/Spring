@@ -1,0 +1,205 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /* Esto asegura que los elementos estén apilados verticalmente */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Fondo negro */
+    color: #fff;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #f44336; /* Rojo Akatsuki */
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+form {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #f44336; /* Borde rojo */
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f44336; /* Rojo Akatsuki */
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f; /* Rojo oscuro al pasar el mouse */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo para las preguntas de selección múltiple (checkboxes) */
+input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+/* Estilo para los resultados */
+span {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #f44336; /* Rojo Akatsuki */
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Agregar un toque de sombras */
+h1, label, p {
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Fondo de la página y texto */
+body {
+    background-image: url('https://yourbackgroundimageurl.com'); /* Si deseas agregar una imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para los formularios */
+form {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo para la imagen del personaje */
+img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin distorsionar */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    width: 300px; /* Establece un tamaño fijo para el contenedor (ancho) */
+    height: 400px; /* Establece un tamaño fijo para el contenedor (alto) */
+    overflow: hidden; /* Esconde cualquier parte de la imagen que sobrepase el contenedor */
+    float: left; /* Alinea el contenedor a la izquierda */
+    margin-right: 20px; /* Espacio a la derecha del contenedor (opcional) */
+}
+/* Estilo de la tabla */
+.table-container {
+    width: 80%;
+    max-width: 800px;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+.tabla-puntuaciones {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333; /* Fondo oscuro para la tabla */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+.tabla-puntuaciones th, .tabla-puntuaciones td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1em;
+    border: 1px solid #f44336; /* Borde rojo */
+}
+.tabla-puntuaciones th {
+    background-color: #222; /* Fondo oscuro para los encabezados */
+    color: #f44336; /* Texto rojo */
+    text-transform: uppercase;
+}
+
+.tabla-puntuaciones td {
+    background-color: #444; /* Fondo ligeramente más claro para las filas */
+    color: #fff; /* Texto blanco */
+    border-left: 1px solid #f44336; /* Borde izquierdo rojo */
+}
+
+.tabla-puntuaciones tr:nth-child(even) td {
+    background-color: #333; /* Fondo alternativo para filas pares */
+}
+
+/* Efecto de hover en filas */
+.tabla-puntuaciones tr:hover td {
+    background-color: #555; /* Resaltar las filas al pasar el ratón */
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed; /* Hace que las celdas tengan un tamaño más consistente */
+}
+/* Estilo del botón de reinicio */
+.restart-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.restart-button .button {
+    padding: 10px 20px;
+    background-color: #f44336; /* Rojo Akatsuki */
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.restart-button .button:hover {
+    background-color: #d32f2f; /* Rojo oscuro al pasar el mouse */
+}
+

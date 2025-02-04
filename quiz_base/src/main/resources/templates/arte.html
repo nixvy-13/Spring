@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Arte</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>¿Para ti que es el arte?</h1>
+    <form action="/arte" method="post">
+        <label>
+            <input type="radio" name="arteSeleccionado" value="SASORI">
+            Es algo eterno
+        </label><br>
+        <label>
+            <input type="radio" name="arteSeleccionado" value="TOBI">
+            Es bonito
+        </label><br>
+        <label>
+            <input type="radio" name="arteSeleccionado" value="ITACHI">
+            Es una forma de expresion
+        </label><br>
+        <label>
+            <input type="radio" name="arteSeleccionado" value="OROCHIMARU">
+            Es otra disciplina mas
+        </label><br>
+        <label>
+            <input type="radio" name="arteSeleccionado" value="DEIDARA">
+            Es algo efimero
+        </label><br>
+
+        <button type="submit">Siguiente</button>
+    </form>
+</body>
+</html>

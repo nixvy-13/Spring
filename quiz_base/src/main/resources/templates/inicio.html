@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio del Quiz</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>Bienvenido al quiz para saber que Akatsuki eres</h1>
+    <form action="/inicio" method="post">
+        <label for="nombre">¿Cuál es tu nombre?</label><br>
+        <textarea id="nombre" name="nombre_jugador" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Siguiente</button>
+    </form>
+</body>
+</html>

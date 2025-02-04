@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobbies</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>¿Cuál es tu hobby favorito?</h1>
+    <form action="/hobbies" method="post">
+        <label>
+            <input type="radio" name="hobbySeleccionado" value="ITACHI"> Escuchar musica
+        </label><br>
+        <label>
+            <input type="radio" name="hobbySeleccionado" value="DEIDARA"> Pintar
+        </label><br>
+        <label>
+            <input type="radio" name="hobbySeleccionado" value="OROCHIMARU"> Leer
+        </label><br>
+        <label>
+            <input type="radio" name="hobbySeleccionado" value="SASORI"> Pasear
+        </label><br>
+        <label>
+            <input type="radio" name="hobbySeleccionado" value="TOBI"> Jugar videojuegos
+        </label><br>
+
+        <button type="submit">Siguiente</button>
+    </form>
+</body>
+</html>
