@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pregunta 1: ¿Cómo prefieres organizar tu día a día?</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+<h3>¡Hola, <span th:text="${nombreUsuario}">Usuario</span>! ¿Con cuál de estas opciones te sientes más identificado?</h3>
+<form action="/pregunta1" method="post">
+    <label><input type="radio" name="identificado" value="PASILLO_CONGELADOS" required> Soy un caos, nunca tengo tiempo para hacerme la comida.</label><br>
+    <label><input type="radio" name="identificado" value="PASILLO_BEBIDAS_ALCOHOLICAS"> Me gusta salir a tomar algo con mis amigos.</label><br>
+    <label><input type="radio" name="identificado" value="PASILLO_DULCES"> Me dejo llevar por las vitrinas de las cafeterías.</label><br>
+    <label><input type="radio" name="identificado" value="PASILLO_FRUTA_VERDURAS"> Hago ejercicio y me gusta cuidarme.</label><br>
+    <button type="submit">Siguiente</button>
+</form>
+</div>
+</body>
+</html>

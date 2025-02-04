@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="/css/stylesResultados.css">
+</head>
+<body>
+<div class="container">
+    <h3>¡Gracias, <span th:text="${nombreUsuario}">Usuario</span>!</h3>
+    <p>Basado en tus respuestas eres el <strong th:text="${resultado.getNombrePasillo()}">Resultado</strong></p>
+    <img th:src="@{${imagen}}" alt="pasillo resultado">
+    <a href="/reiniciar">Volver a empezar</a>
+	<form method="post" action="/ranking">
+		<label>Introduce el nombre del de un jugador para ver su ranking: </label>
+		<input type="text" name="nombreJugador">
+		<input type="submit" value="Buscar">
+	</form>
+</div>
+</body>
+</html>

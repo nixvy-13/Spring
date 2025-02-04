@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/stylesResultados.css">
+</head>
+<body>
+<div class="container">
+    <h3>¡Gracias, <span th:text="${nombreUsuario}">Usuario</span>!</h3>
+    <p>Basado en tus respuestas eres el <strong th:text="${resultado.getNombrePasillo()}">Resultado</strong></p>
+    <img th:src="@{${imagen}}" alt="pasillo resultado">
+    <a href="/reiniciar">Volver a empezar</a>
+</div>
+</body>
+</html>

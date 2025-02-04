@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/css/stylesRanking.css">
+	</head>
+	<body>
+		<div class="ranking-container">
+		    <h3>Rankings</h3>
+			<p>Ranking según el nombre que has introducido:</p>
+		    <table>
+		        <thead>
+		            <tr>
+		                <th>Usuario</th>
+		                <th>Resultado</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr th:each="usuario : ${resultadosRanking1}">
+		                <td th:text="${usuario.usuario.nombreUsuario}"></td>
+		                <td th:text="${usuario.nombrePasillo}"></td>
+		            </tr>
+		        </tbody>
+		    </table>
+			<p>Ranking según el nombre del pasillo:</p>
+			<table>
+			    <thead>
+			        <tr>
+			            <th>Usuario</th>
+			            <th>Resultado</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr th:each="usuario : ${resultadosRanking1}">
+			            <td th:text="${usuario.usuario.nombreUsuario}"></td>
+			            <td th:text="${usuario.nombrePasillo}"></td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+	</body>
+</html>

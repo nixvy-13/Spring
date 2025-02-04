@@ -1,0 +1,145 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Contenedor del Resultado */
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Encabezado */
+h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Párrafo */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Botón Volver a Empezar */
+a {
+    display: inline-block;
+    background-color: #fcb69f;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: #fc8e7f;
+    transform: translateY(-2px);
+}
+
+a:active {
+    transform: translateY(0);
+}
+
+/* Formulario */
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para la Etiqueta del Formulario */
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para el Input del Formulario */
+form input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 60%;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #fcb69f;
+}
+
+/* Estilo para el Botón del Formulario */
+form input[type="submit"] {
+    background-color: #fcb69f;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 40%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #fc8e7f;
+    transform: translateY(-2px);
+}
+
+form input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Responsividad para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    form input[type="text"], form input[type="submit"] {
+        width: 80%;
+    }
+}
